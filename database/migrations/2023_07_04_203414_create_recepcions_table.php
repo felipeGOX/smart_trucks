@@ -19,7 +19,7 @@ return new class extends Migration
             $table->double('cantidad');
             $table->string('observacion');
             $table->unsignedBigInteger('id_basura');
-            $table->unsignedBigInteger('id_recorrido');
+            $table->unsignedBigInteger('id_recorrido')->nullable();
             $table->foreign('id_basura')->references('id')->on('basuras')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('id_recorrido')->references('id')->on('recorridos')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();

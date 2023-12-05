@@ -28,7 +28,7 @@ class StoreRecepcionRequest extends FormRequest
             'cantidad' => 'required',
             'observacion' => 'required',
             'id_basura' => 'required',
-            'id_recorrido' => 'required',
+           // 'id_recorrido' => 'required',
         ];
     }
 }
