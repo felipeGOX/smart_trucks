@@ -26,7 +26,7 @@ use App\Http\Controllers\RolController;
 use App\Http\Controllers\RutaController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ZonaController;
-
+use App\Http\Controllers\BarrioController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -73,6 +73,7 @@ Route::group(['middleware' => ['auth']], function () {
     route::resource('/redes', RedController::class);
     route::resource('/establecimientos', EstablecimientoController::class);
     route::resource('/recepciones', RecepcionController::class);
+    route::resource('/barrios', BarrioController::Class);
     route::resource('/datasets', DatasetController::class);
     Route::get('/datasets/query/{id}', [DatasetController::class, 'query'])->name('datasets.query');
     Route::post('/datasets/query', [DatasetController::class, 'queryStore'])->name('datasets.queryStore');

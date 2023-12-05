@@ -14,4 +14,9 @@ class Barrio extends Model
         'coordenada',
         'id_distrito',
     ];
+
+    public function distrito()
+    {
+        return $this->hasOne(Distrito::class,'id','id_distrito');
+    }
 }

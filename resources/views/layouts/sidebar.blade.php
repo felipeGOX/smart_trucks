@@ -147,6 +147,12 @@
                                 <b> Basuras</b>
                             </a>
                         </li>
+                        <li class="{{ 'areasCriticas' == Request::is('areasCriticas*') ? 'active' : '' }}">
+                            <a href="{{ url('/barrios') }}">
+                                <i class="fas fa-map"></i>
+                                <b> Barrios</b>
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <!--
