@@ -22,7 +22,7 @@
                             <option value=""> Elegir Un Tipo De Basura... </option>
                             @foreach ($basuras as $basura)
                                 <option value="{{ $basura->id }}">
-                                    {{ $basura->tipo }}
+                                    {{ $basura->nombre }}
                                 </option>
                             @endforeach
                         </select>

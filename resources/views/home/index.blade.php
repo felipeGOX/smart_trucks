@@ -9,8 +9,7 @@
 
 
 
-    <h1>aqui hare mis graficas </h1>
-
+    
 
 
 
