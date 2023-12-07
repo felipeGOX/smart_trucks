@@ -190,4 +190,11 @@ class ChoferController extends Controller
 
         );
     }
+
+
+
+    public function enviarNotificacionDellegada(Request $request ){
+        $id_barrio=$request->id_barrio;
+        event(new \App\Events\SendNotifications($request->id_barrio));
+    }
 }
