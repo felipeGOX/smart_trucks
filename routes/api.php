@@ -25,8 +25,8 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('/listarRutas', [ChoferController::class, 'listarRutas']);
     Route::post('/obtenerCoordenadaDeLaRuta', [ChoferController::class, 'obtenerCoordenadaDeLaRuta']);
     Route::post('/guardarRecorridoDelChofer', [ChoferController::class, 'guardarRecorridoDelChofer']);
-
-
+    Route::get('/listaBarrios', [ChoferController::class, 'listaBarrios']);
+    Route::post('/sendNotifications', [ChoferController::class, 'enviarNotificacionDellegada']);
 
     /* CLIENTE  */
 
