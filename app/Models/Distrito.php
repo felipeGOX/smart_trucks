@@ -14,4 +14,10 @@ class Distrito extends Model
         'descripcion',
         'id_zona',
     ];
+
+    public function barrios()
+    {
+        return $this->hasMany(Barrio::class, 'id_distrito','id');
+    }
+
 }

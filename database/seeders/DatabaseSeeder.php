@@ -35,5 +35,6 @@ class DatabaseSeeder extends Seeder
         $this->call(EstablecimientoSeeder::class);
         $this->call(DatasetSeeder::class);
         $this->call(AreaCriticaSeeder::class);
+        $this->call(RecepcionSeeder::class);
     }
 }
