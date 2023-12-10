@@ -109,6 +109,20 @@ class BarrioSeeder extends Seeder
             'coordenada'=>'[{"lat":-17.776554,"lng":-63.189458}]',
             'id_distrito'=>'4',
            ]);
+
+
+           
+           Barrio::create([
+            'nombre'=>'Ficct',
+            'coordenada'=>'[{"lat":-17.776301,"lng":-63.195144}]',
+            'id_distrito'=>'4',
+           ]);
+
+           Barrio::create([
+            'nombre'=>'Av. olimpica',
+            'coordenada'=>'[{"lat":-17.847822,"lng":-63.210878}]',
+            'id_distrito'=>'4',
+           ]);
           
        
     }
